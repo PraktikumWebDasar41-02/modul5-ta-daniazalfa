@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 07, 2018 at 08:37 AM
--- Server version: 10.1.9-MariaDB
--- PHP Version: 5.6.15
+-- Generation Time: Oct 07, 2018 at 09:36 AM
+-- Server version: 10.1.30-MariaDB
+-- PHP Version: 5.6.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -38,6 +40,13 @@ CREATE TABLE `t_jurnal1` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `t_jurnal1`
+--
+
+INSERT INTO `t_jurnal1` (`nim`, `nama`, `email`, `komentar`, `tanggallahir`, `jeniskelamin`, `jurusan`, `fakultas`) VALUES
+(6701174129, 'daniazalfa', 'daniazalfa@gmail.com', 'ini Ta ', '1999-07-19', 'Perempuan', 'MI', 'FIT');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -46,6 +55,7 @@ CREATE TABLE `t_jurnal1` (
 --
 ALTER TABLE `t_jurnal1`
   ADD PRIMARY KEY (`nim`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
